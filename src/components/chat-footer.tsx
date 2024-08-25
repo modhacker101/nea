@@ -131,6 +131,8 @@ export const ChatFooter: FC<ChatFooterProps> = ({ chatId, currentUserId }) => {
     }
   };
 
+
+
   const handleImageUpload = async () => {
     const uniqueId = uuid();
     if (!imageOrPdf) return;
@@ -256,6 +258,8 @@ export const ChatFooter: FC<ChatFooterProps> = ({ chatId, currentUserId }) => {
                     if (e.key === 'Enter' && !e.shiftKey) {
                       e.preventDefault();
                       await form.handleSubmit(createMessagehandler)();
+                      form.setValue('content', '');
+                      
                     }
                   }}
                   rows={1}
