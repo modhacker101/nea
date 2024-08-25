@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: 'https://modern-ghost-15.clerk.accounts.dev/',
+      domain: 'https://renewing-weasel-73.clerk.accounts.dev',
       applicationID: 'convex',
     },
   ],
